@@ -1,17 +1,17 @@
 import React from "react";
-import { ReactDOM } from "react";
 import Row from "./Row";
 import "./App.css";
 import requests from "./requests";
+import Navbar from "./Navbar";
 import Banner from "./Banner";
 
 function App() {
   return (
     <div className="App">
-      <h1>This is Aditya Jasrotia</h1>
+      <Navbar />
       <Banner />
       <Row
-        title="NETFLIX ORIGINALS"
+        title="BingeIT ORIGINALS"
         fetchUrl={requests.fetchNetflixOriginals}
         isLargeRow={true}
       />
